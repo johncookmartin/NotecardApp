@@ -1,4 +1,8 @@
 import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import MainLayout from './layouts/MainLayout';
+import Login from './pages/Login';
+import Home from './pages/Home';
 
 const theme = createTheme({
   palette: {
@@ -29,7 +33,14 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <div>App</div>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<MainLayout />}>
+            <Route path="/login" element={<Login />} />
+            <Route path="/" element={<Home />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 };

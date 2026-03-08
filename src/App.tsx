@@ -7,21 +7,21 @@ import Home from './pages/Home';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#144707',
+      main: '#dae6c0',
     },
     secondary: {
       main: '#927F15',
     },
     background: {
-      default: '#2a2a2a',
-      paper: '#2a2a2a',
+      default: '#474638',
+      paper: '#474638',
     },
     text: {
       primary: '#FFFFFF',
       secondary: '#B0B0B0',
     },
     action: {
-      hover: 'rgba(255, 255, 255, 0.25)',
+      hover: 'rgba(255, 255, 255, 0.4)',
     },
   },
   typography: {
